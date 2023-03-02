@@ -1,0 +1,172 @@
+body {
+    font-family: 'Inter', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.boxs .box {
+    z-index: 0;
+    /* From https://css.glass */
+    background: rgba(154, 28, 146, 0.12);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(7px);
+    /* -webkit-backdrop-filter: blur(7px); */
+    padding: 20px;
+    /* border-radius: 10px; */
+    position: absolute;
+}
+
+.boxs .box:nth-child(1) {
+    top: -100px;
+    left: 20%;
+    width: 40px;
+    height: 40px;
+    animation: animate 10s linear infinite;
+}
+
+.boxs .box:nth-child(2) {
+    top: -220px;
+    left: 40%;
+    width: 30px;
+    height: 30px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(3) {
+    top: -350px;
+    left: 60%;
+    width: 35px;
+    height: 35px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(4) {
+    top: -200px;
+    left: 20%;
+    width: 40px;
+    height: 40px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(5) {
+    top: -490px;
+    left: 60%;
+    width: 15px;
+    height: 15px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(6) {
+    top: -560px;
+    left: 40%;
+    width: 40px;
+    height: 40px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(7) {
+    top: -495px;
+    left: 10%;
+    width: 40px;
+    height: 40px;
+    animation: animate 10s linear infinite;
+
+}
+
+.boxs .box:nth-child(8) {
+    top: -200px;
+    left: 30%;
+    width: 50px;
+    height: 50px;
+    animation: animate 10s linear infinite;
+
+}
+
+@keyframes animate {
+    0% {
+        transform: translateY(0) rotate(0);
+    }
+
+    100% {
+        transform: translateY(1200px) rotate(360deg);
+    }
+}
+
+.container {
+    margin: 5% 5% 0 5%;
+    max-height: 100vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.curve {
+    position: absolute;
+    left: -90px;
+}
+
+.main {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.main .left-side {
+    z-index: 10;
+    position: relative;
+    left: 200px;
+}
+
+.main .right-side {
+    position: relative;
+}
+
+.main .left-side img {
+    position: absolute;
+    left: 75px;
+    top: -70px;
+}
+
+.main .left-side .text .first {
+    font-size: 32px;
+    font-weight: 300;
+    margin-bottom: 40px;
+    width: 90%;
+}
+
+.main .left-side .text .second {
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.main .left-side .text .second span {
+    color: #777;
+}
+
+.main .right-side .tanya {
+    position: absolute;
+    top: 65px;
+    right: 85px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+}
+
+.arrows {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    position: absolute;
+    left: 120px;
+    bottom: 40px;
+    background-color: #fff;
+    padding: 14px 20px;
+    border-radius: 70px;
+}
